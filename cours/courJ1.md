@@ -109,3 +109,9 @@ Nous avons organiser les fichiers du projet.
 Par convention le odssier controller contient la logique des router de l'appliation.
 Le router permet de faire le lien entre les point d'entré et les controllers.
 Les views affiche le resultat.
+
+
+---
+ ## Petite virgule git branch
+
+ https://kourou.oclock.io/ressources/fiche-recap/branches/

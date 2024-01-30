@@ -1,4 +1,13 @@
 <%- include("partials/header") %>
     <%# contenu spécifique à la page %>
         <h2> Bienvenue sur le trombin O'clock </h2>
+        <ul>
+            <% for(promo of locals.promos) { %>
+                <li>
+                    <%= promo.id %> -- <%= promo.name %> -- <%= promo.github_organization %>
+                </li>
+                <% } %>
+        </ul>
+                <%# Inclure la boucle de logique du traitement des promos %>
+
         <%- include("partials/footer") %>
