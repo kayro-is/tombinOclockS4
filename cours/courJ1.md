@@ -66,4 +66,27 @@ Les user story :
 Format de conception centré sur les utilisateur. il est pratique car il permet d'être précis. On peut le faire sans maquette graphique.
 
 Wireframe :
-Un guide visuel simplifiée. permet de se faire une première idée de ce que va donner l'aplicaiton d'un point de vue visuel.
+Un guide visuel simplifiée. permet de se faire une première idée de ce que va donner l'application d'un point de vue visuel.
+
+
+kanban :
+Le système Kanban est une méthode de gestion de projet et de suivi de la production. Elle a été développée à grande échelle dans les années 1950, au sein de l'industrie automobile japonaise. Ainsi, c'est Toyota qui fut la première entreprise à mettre à profit cette méthode.
+
+github projets : 
+Qui permet le suivi de projet en équipe avec un système de card attribuable à chaque membre de l'équipe.
+
+
+
+Variable d'environnement :
+
+C'est un ensemble de valeur dynamique qui sont définit en fonction de l'environnement d'execution.
+Sous nodeJs, le paquet qui nous permet de les utiliser s'appelle dotenv : https://www.npmjs.com/package/dotenv
+Au début de notre application on a besoin de setup dotenv pas cette ligne : 
+require('dotenv').config()
+
+et on utilise les variable grace à process.env.<nomVariable>
+
+Elles sont stockées dans un fichier.env, celui-ci ne doit pas être présent sur notre dépot distant. On peut informer nos collégues sur les variables présentes dans l'application avec un fichier .env.example ou dans le readMe.
+
+.gitignore 
+Permet de faire ignorer des fichier et des dossier par le tracking git.
