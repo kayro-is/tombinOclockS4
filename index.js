@@ -1,17 +1,28 @@
 // Pour utiliser les variables d'envirronnement
 require('dotenv').config()
-console.log(process.env)
+
 
 
 
 
 // Déclaration des modules
 const express = require('express')
+const router = require('./app/router')
+
+
 
 // Initialisation
 const app = express()
 const PORT = process.env.PORT || 3000;
 
+// setup de l'application
+app.set('views engine', 'ejs');
+app.set('views', './app/views')
+
+// Pour rendre disponible les fichiers static
+app.use(express.static('./public'))
+
+app.use(router)
 
 
 // Lancement de l'application 
